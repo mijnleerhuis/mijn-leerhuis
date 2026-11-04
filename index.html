@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#133c36">
+  <meta name="description" content="Mijn Leerhuis: overzichtelijke wegwijzer voor studenten in de Landstede Leerhuizen. Startgids, LWP's, systemen en praktijkleren.">
+  <title>Mijn Leerhuis · Jouw weg door de opleiding</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="content.js"></script>
+  <script defer src="lwp-data.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" class="svg-defs" aria-hidden="true">
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="7.2"/><path d="m16.2 16.2 5 5"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h16m-7-7 7 7-7 7"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m5 5 14 14M19 5 5 19"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M4.9 4.9l1.5 1.5m11.2 11.2 1.5 1.5M19.1 4.9l-1.5 1.5M6.4 17.6l-1.5 1.5"/></symbol>
+    <symbol id="i-monitor" viewBox="0 0 24 24"><rect x="2.5" y="4" width="19" height="14" rx="2"/><path d="M8 22h8m-4-4v4"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M12 6c-3-2-7-2.5-10-1v14c4-1.5 7.5-1 10 1 2.5-2 6-2.5 10-1V5c-3-1.5-7-1-10 1ZM12 6v14"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M20.8 5.8a5.1 5.1 0 0 0-7.2 0L12 7.4l-1.6-1.6a5.1 5.1 0 0 0-7.2 7.2L12 21l8.8-8a5.1 5.1 0 0 0 0-7.2Z"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 21v-2a6 6 0 0 1 12 0v2M17 5a3 3 0 0 1 0 6m1 4a5 5 0 0 1 3 4v2"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m4 12 5 5 11-11"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="m12 2 2.3 7.7L22 12l-7.7 2.3L12 22l-2.3-7.7L2 12l7.7-2.3L12 2Z"/></symbol>
+    <symbol id="i-external" viewBox="0 0 24 24"><path d="M13 4h7v7m0-7-9 9"/><path d="M19 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h5"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-list" viewBox="0 0 24 24"><path d="M9 6h12M9 12h12M9 18h12M3 6h1m-1 6h1m-1 6h1"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 10v7m0-11v.5"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 11a8.5 8.5 0 0 1-8.5 8.5 10 10 0 0 1-3.5-.6L3 21l1.4-5A8.5 8.5 0 1 1 21 11Z"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 2 3.5 6v5c0 5.5 3.2 9 8.5 11 5.3-2 8.5-5.5 8.5-11V6L12 2Z"/><path d="m8 12 3 3 5-6"/></symbol>
+  </svg>
+  <div class="site-wrapper">
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="brand" href="#home" data-view="home" aria-label="Mijn Leerhuis, naar de startpagina">
+          <span class="brand-mark" aria-hidden="true"><svg class="icon"><use href="#i-book"></use></svg></span>
+          <span class="brand-text"><strong>Mijn Leerhuis</strong><span>Jouw weg door de opleiding</span></span>
+        </a>
+        <nav class="nav" aria-label="Hoofdnavigatie">
+          <a href="#home" data-view="home" class="nav-link active">Start</a>
+          <a href="#startgids" data-view="startgids" class="nav-link">Startgids</a>
+          <a href="#onderwerpen" data-view="onderwerpen" class="nav-link">Onderwerpen</a>
+          <a href="#vragen" data-view="vragen" class="nav-link">Alle vragen</a>
+        </nav>
+        <button class="header-help" data-action="focus-search"><svg class="icon"><use href="#i-search"></use></svg><span>Stel je vraag</span></button>
+      </div>
+    </header>
+
+    <main>
+      <figure class="location-banner" id="location-banner" data-leerhuis="boerhaavehof" aria-label="Foto van het gekozen leerhuis">
+        <img id="location-banner-image" src="assets/boerhaavehof.jpg" alt="Het gebouw van leerhuis Boerhaavehof" width="651" height="466" fetchpriority="high" decoding="async">
+        <figcaption id="hero-photo-label">JOUW LEERHUIS <strong>BOERHAAVEHOF</strong></figcaption>
+      </figure>
+<section class="hero" data-leerhuis="boerhaavehof" aria-labelledby="hero-title">
+        <div class="shell hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow"><span class="eyebrow-dot"></span> JOUW WEGWIJZER TIJDENS DE OPLEIDING</span>
+            <h1 id="hero-title">Jouw opleiding. <em>Jouw route.</em></h1>
+            <p>Van je eerste lesdag tot je laatste examen. Zoek de informatie die jij nodig hebt, volg je leerroute en ontdek wat je volgende stap kan zijn.</p>
+            <div class="search-wrapper">
+              <label for="question-search" class="search-label">Wat wil je weten?</label>
+              <div class="search-box">
+                <svg class="icon search-icon"><use href="#i-search"></use></svg>
+                <input id="question-search" type="search" placeholder="Bijvoorbeeld: hoe rond ik een LWP af?" autocomplete="off" spellcheck="false" aria-describedby="search-hint" aria-controls="search-results" aria-expanded="false">
+                <button class="search-submit" type="button" id="search-button" aria-label="Zoek antwoorden"><svg class="icon"><use href="#i-arrow"></use></svg></button>
+              </div>
+              <p id="search-hint" class="search-hint">Probeer: <button data-query="ziekmelden" class="inline-prompt">ziekmelden</button> <span>·</span> <button data-query="LWP" class="inline-prompt">LWP</button> <span>·</span> <button data-query="medisch rekenen" class="inline-prompt">medisch rekenen</button> <span>·</span> <button data-query="skillslab" class="inline-prompt">SkillsLab</button></p>
+              <div id="search-results" class="search-results" aria-live="polite" hidden></div>
+            </div>
+          </div>
+          <aside class="hero-panel choice-panel" aria-label="Kies je leerhuis en opleiding">
+            <div class="form-grid">
+              <div class="choice-field">
+                <label for="location-select">Mijn leerhuis</label>
+                <select id="location-select"><option value="boerhaavehof">Boerhaavehof</option><option value="villaverde">Villa Verde</option></select>
+              </div>
+              <div class="choice-field">
+                <label for="course-select">Mijn opleiding</label>
+                <select id="course-select"><option value="vig">Verzorgende IG</option><option value="vp">Verpleegkundige</option></select>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+      <div class="shell" id="dynamic-content"></div>
+    </main>
+    <footer class="site-footer">
+      <div class="shell footer-inner">
+        <div><strong>Mijn Leerhuis</strong><p>Een wegwijzer voor je hele opleiding, naast Connect, Teams, e-TO en Eduarte. Officiële systemen blijven leidend.</p></div>
+        <div class="footer-meta"><span>Versie 1.0 · schooljaar 2026–2027</span><span>Bronnen 2019–2027 (controle nodig)</span><span>Officiële schoolinformatie en je coach blijven leidend</span></div>
+      </div>
+    </footer>
+  </div>
+
+  <div id="answer-modal" class="modal" hidden aria-hidden="true">
+    <div class="modal-backdrop" data-action="close-modal"></div>
+    <section class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title" tabindex="-1">
+      <div id="modal-body"></div>
+    </section>
+  </div>
+</body>
+</html>
