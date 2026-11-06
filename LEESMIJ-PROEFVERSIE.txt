@@ -1,0 +1,22 @@
+MIJN LEERHUIS 1.5 – PROEFVERSIE, NIET AUTOMATISCH GEPUBLICEERD
+
+Inhoud:
+- index.html / style.css / app.js: website en vormgeving
+- content.js: studentvragen en antwoorden, met nieuwe uitleg voor Nederlands, Engels, rekenen
+- lwp-data.js: LWP-informatie (Beroepsbeeld is optioneel)
+- document-index.js / document-search.js: bronpassages en documentzoeker
+- assets/: twee leerhuisfoto's
+- downloads/: twee Word-formulieren
+- .nojekyll: GitHub Pages-instelling
+
+Nieuw: Mijn taken. Studenten maken taken voor Leerhuis of School, kiezen urgentie (hoog/normaal/laag)
+en vinken taken af. Onder Mijn taken staan ook antwoorden die de student heeft bewaard.
+Opslag uitsluitend lokaal in de browser, niet gesynchroniseerd met apparaten of accounts.
+Niet bedoeld voor cliëntgegevens of formele studievoortgang.
+
+Publiceren na goedkeuring: upload de INHOUD van deze map naar de root van de bestaande
+GitHub-repository mijn-leerhuis (of vervang de bestaande bestanden), klik Commit changes.
+GitHub Pages werkt dan de website bij. Upload niet alleen het ZIP-bestand.
+
+Controleer voor publicatie actuele links en opleiding-/exameninformatie met de docenten.
+Bestaande LWP-voortgang blijft behouden door ongewijzigde lokale opslagsleutels.

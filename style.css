@@ -3,12 +3,12 @@
 /* Boekenlijsten BBL 2025–2026 — bewust als historische bron gemarkeerd */
 .booklist-section{margin-top:18px}.booklist-warning{border-left:4px solid #af713d;background:#fff4e8;border-radius:10px;padding:15px 17px;color:#68462c}.booklist-warning strong{display:block;font-size:14px}.booklist-warning p{margin:5px 0 0;font-size:12px;line-height:1.7}.booklist-heading{margin:28px 0 17px}.booklist-heading h3{font-size:19px;margin:0 0 7px}.booklist-heading p,.book-group-note{color:#637a6e;font-size:12px;line-height:1.7;margin:0 0 12px}.book-group{margin:20px 0}.book-group h4{font-size:15px;margin:0 0 4px}.book-items{list-style:none;margin:0;padding:0;border:1px solid #e0e9df;border-radius:12px;overflow:hidden}.book-item{display:flex;flex-direction:column;gap:2px;padding:14px 16px;border-bottom:1px solid #e7eee7}.book-item:last-child{border:0}.book-item strong{font-size:13px;line-height:1.55}.book-item .book-isbn{font-size:11px;color:#526c5e}.book-item .book-price{font-size:11px;color:#748579}.book-item .book-item-note{font-size:11px;color:#895d37;font-weight:650;padding-top:3px}.booklist-section .book-group h4{font-family:Verdana,Geneva,Tahoma,sans-serif}@media(max-width:510px){.book-item{padding:12px}.booklist-warning{padding:14px}}
 
-/* Drie stappen voor vragen: altijd bovenaan de homepage */
+/* Twee ondersteuningsstappen voor vragen: direct onder de zoekbalk */
 .help-route{background:#fff;border:1px solid #dce7dd;border-radius:22px;box-shadow:var(--shadow);padding:32px 34px 23px}
 .help-route-heading{margin-bottom:19px}
 .help-route-heading h2{font-size:clamp(23px,2.5vw,30px);line-height:1.3;letter-spacing:-.6px;margin:8px 0 6px}
 .help-route-heading p{color:var(--muted);font-size:14px;margin:0}
-.help-route-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));list-style:none;padding:0;margin:0;gap:12px}
+.help-route-steps{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));list-style:none;padding:0;margin:0;gap:12px}
 .help-route-step{display:flex;align-items:flex-start;gap:12px;background:#f5f8f3;border:1px solid #e4ebe2;border-radius:14px;padding:19px 16px;min-width:0}
 .help-route-featured{background:#e8f2eb;border-color:#cddfd1}
 .help-route-num{width:34px;height:34px;flex:0 0 34px;display:grid;place-items:center;background:#fff;color:#245d4c;border:1px solid #cfdfd2;border-radius:10px;font-weight:800;font-size:16px;line-height:1}
@@ -241,3 +241,180 @@
 
 /* Downloadbaar POP/PAP-formulier en verwijzing naar het formulier */
 .answer-download{margin:18px 0 20px;border:1px solid #d8e7dc;background:#f5faf6;border-radius:12px;padding:16px}.answer-download .external-button{font-family:Verdana,Geneva,Tahoma,sans-serif;cursor:pointer;border:0;font-size:13px;text-align:left}.answer-download p{font-size:12px;line-height:1.6;color:#547264;margin:10px 0 0}
+
+/* Versie 1.1 – zoekresultaten uit opleidingsdocumenten */
+.search-results{max-height:min(67vh,610px);overflow-y:auto;padding:12px}
+.search-doc-hit{display:flex;flex-direction:column;gap:5px;align-items:flex-start;text-align:left;width:100%;padding:14px 12px;background:white;border:1px solid transparent;border-top-color:#e7eee6;border-radius:8px;color:var(--ink)}
+.search-doc-hit:hover,.search-doc-hit:focus-visible{background:#f3f9f2;border-color:#b2d2bd}
+.search-doc-hit strong{font-size:13px;line-height:1.45}
+.search-doc-hit small{font-size:10px;color:#648274;line-height:1.5}
+.search-doc-excerpt{font-size:12px;line-height:1.6;color:#526f60}
+.search-doc-tag{font-size:10px;color:#2e7354;font-weight:800;text-transform:uppercase;letter-spacing:.3px;display:flex;gap:6px;align-items:center}
+.search-doc-tag .icon{width:14px;height:14px}
+.search-faq-label{margin-top:12px;padding-top:12px;border-top:2px solid #dbeade}
+.search-disclaimer{font-size:10px;color:#667b6a;padding:12px 9px 4px;margin:0;line-height:1.65}
+.document-quote{font-size:15px;line-height:1.9;margin:12px 0 22px;padding:22px;background:#f5f8f3;border-left:4px solid #6f9f81;border-radius:0 12px 12px 0;color:#244d3c;white-space:pre-line}
+.document-warning{background:#fff7e9;border:1px solid #edddb8;border-radius:10px;padding:13px 15px;font-size:13px;color:#7a5c2b}
+.document-disclaimer{font-size:12px;line-height:1.7;color:#697d70}
+@media(max-width:510px){.search-results{max-height:60vh}.search-doc-hit{padding:12px 9px}.document-quote{padding:15px;font-size:13px}}
+
+.document-practical{border:1px solid #dce9df;border-radius:12px;padding:16px 18px;margin:5px 0 24px;background:#f3faf5}.document-practical h3{font-size:13px;margin:0 0 8px}.document-practical p{font-size:13px;line-height:1.7;margin:0 0 8px;color:#426956}
+
+/* Versie 1.2: direct, stapgericht zoeken. Bronnen zijn compacte voetnoten. */
+.search-direct-hit{display:flex;flex-direction:column;width:100%;text-align:left;align-items:flex-start;gap:7px;padding:14px 15px;background:#fff;border:1px solid #e4ede4;border-radius:11px;margin:6px 0;color:#24493c;font-family:Verdana,Geneva,Tahoma,sans-serif;cursor:pointer}
+.search-direct-hit strong{font-size:14px;line-height:1.5}
+.search-direct-hit>span:not(.search-direct-label){font-size:12px;line-height:1.65;color:#526f60}
+.search-direct-hit small{font-weight:750;font-size:11px;color:#2b7354;display:inline-flex;align-items:center;gap:6px}
+.search-direct-hit small .icon{width:13px;height:13px}
+.search-direct-main{background:#f0f8f1;border-color:#a7cdb0;box-shadow:0 3px 12px rgba(27,91,55,.05)}
+.search-direct-main:hover,.search-direct-hit:focus-visible{border-color:#398165;background:#e7f4e9}
+.search-direct-label{font-size:10px;font-weight:850;color:#4e8564;letter-spacing:.7px;display:flex;align-items:center;gap:7px}
+.search-direct-label .icon{width:14px;height:14px}
+.search-other{margin:10px 0;border-top:1px solid #e7eee6;padding:10px 2px 2px}
+.search-other summary{cursor:pointer;font-size:12px;font-weight:730;color:#4f755c;padding:5px 4px}
+.search-other[open] summary{margin-bottom:8px}
+.document-short{font-size:14px;line-height:1.75;margin:15px 0 13px;padding:16px 20px}
+.answer-source-inline{font-size:11px;line-height:1.65;margin-top:8px;color:#738879}
+@media(max-width:510px){.search-direct-hit{padding:14px 12px}.document-short{padding:14px}}
+
+/* Vragenroute: twee kolommen op ruim scherm, één kolom op mobiel. */
+@media (max-width: 650px) { .help-route-steps { grid-template-columns: 1fr; } }
+
+/* Versie 1.5 – compactere onderwerpen, beter zichtbare zoekfunctie op mobiel */
+.topic-groups{display:grid;gap:12px}
+.topic-group{background:#fff;border:1px solid #d9e5dc;border-radius:15px;overflow:hidden;box-shadow:0 3px 16px rgba(18,63,40,.035)}
+.topic-group>summary{list-style:none;cursor:pointer;padding:17px 20px;display:flex;align-items:center;justify-content:space-between;gap:12px;color:#214f3c;font-size:15px;font-weight:800}
+.topic-group>summary::-webkit-details-marker{display:none}
+.topic-group[open]>summary{background:#edf5ee;border-bottom:1px solid #dce8df}
+.topic-group-meta{color:#6b8073;font-size:11px;font-weight:600;white-space:nowrap}
+.topic-group .topics-grid{padding:13px;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.topic-group .topic-card{min-height:94px;padding:14px;gap:11px}
+.topic-group .topic-card h3{font-size:14px;margin-bottom:3px}
+.topic-group .topic-card p{font-size:11px;margin-bottom:5px}
+.topic-group .topic-icon{height:36px;width:36px;border-radius:10px}
+.topic-group .topic-icon .icon{width:19px;height:19px}
+.topic-group .count{font-size:10px}
+.favorite-btn{display:inline-flex;align-items:center;gap:8px;background:#f0f7f0;border:1px solid #bcd7c6;border-radius:11px;padding:9px 12px;color:#245942;font-size:12px;font-weight:800;margin:0 0 17px}
+.favorite-btn:hover,.favorite-btn.is-saved{background:#ddefe1}
+.favorite-btn .icon{width:15px;height:15px}
+.answer-steps{margin-bottom:22px}
+.answer-steps li{line-height:1.75}
+.answer-source{font-size:10px;opacity:.8}
+/* Persoonlijke to-dolijst: opzettelijk eenvoudig, op één apparaat bewaard. */
+.tasks-page{max-width:1130px}
+.tasks-intro{display:flex;align-items:center;gap:24px;padding:17px 21px;border-radius:16px;background:#eaf4eb;border:1px solid #d6e5d9;margin:22px 0 20px}
+.tasks-intro>div{display:flex;align-items:baseline;gap:10px;white-space:nowrap}
+.tasks-intro strong{font-size:33px;color:#1a6046}
+.tasks-intro span{font-size:13px;font-weight:750;color:#376d53}
+.tasks-intro p{font-size:12px;color:#637b6b;line-height:1.6;margin:0}
+.task-form{background:#fff;border:1px solid #dce7df;border-radius:18px;padding:21px 23px;box-shadow:0 5px 24px rgba(21,56,42,.04);margin-bottom:26px}
+.task-form h3{font-size:18px;margin:0 0 17px}
+.task-form-grid{display:grid;grid-template-columns:minmax(180px,2fr) minmax(115px,1fr) minmax(105px,.8fr) auto;align-items:end;gap:12px}
+.task-field{display:flex;flex-direction:column;gap:7px;min-width:0}
+.task-field>span{font-size:11px;color:#456352;font-weight:750}
+.task-field input,.task-field select{width:100%;height:45px;border-radius:10px;border:1px solid #cbddce;background:#fbfdf9;color:#254b3a;padding:0 11px;font-size:12px}
+.task-add{height:45px;padding:0 14px;white-space:nowrap}
+.task-add .icon{width:15px}
+.task-columns{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;align-items:start}
+.task-section{background:#fff;border:1px solid #dbe7dc;border-radius:16px;min-width:0;overflow:hidden}
+.task-section-top{padding:20px;border-bottom:1px solid #e2eae3;display:flex;align-items:center;justify-content:space-between;gap:10px;background:#f6faf6}
+.task-section-top h3{margin:0;color:#194a39;font-size:20px}
+.task-section-top p{font-size:11px;margin:4px 0 0;color:#6a7f70;line-height:1.5}
+.task-count{font-size:11px;font-weight:800;color:#387958;background:#e2f0e3;padding:6px 10px;border-radius:25px;white-space:nowrap}
+.task-list{list-style:none;margin:0;padding:0}
+.personal-task{display:flex;align-items:center;gap:7px;justify-content:space-between;padding:12px 13px;border-bottom:1px solid #edf0ed}
+.personal-task:last-child{border-bottom:0}
+.task-checkbox{display:flex;align-items:flex-start;gap:10px;flex:1;min-width:0;cursor:pointer}
+.task-checkbox input{width:19px;height:19px;margin:3px 0 0;accent-color:#287454;flex-shrink:0}
+.task-main{min-width:0;display:flex;flex-direction:column;align-items:flex-start;gap:5px}
+.task-main strong{font-size:12px;line-height:1.6;overflow-wrap:anywhere}
+.personal-task.done .task-main strong{text-decoration:line-through;color:#7e9285}
+.task-tag{font-size:10px;border-radius:6px;padding:3px 7px;font-weight:700}
+.priority-hoog{color:#9c3d24;background:#fff0e8}
+.priority-normaal{color:#7c6728;background:#fff7dc}
+.priority-laag{color:#326d5b;background:#eaf5ed}
+.task-delete{background:none;border:0;padding:7px;color:#798f80;border-radius:8px;display:grid;place-items:center;flex-shrink:0}
+.task-delete .icon{width:16px;height:16px}
+.task-delete:hover{background:#fff0eb;color:#aa3d2e}
+.tasks-empty{font-size:12px;color:#688070;line-height:1.75;padding:17px 19px;margin:0}
+.task-storage-note{font-size:11px;color:#6a7c70;line-height:1.7;display:flex;align-items:flex-start;gap:9px;margin:17px 0 35px}
+.task-storage-note .icon{width:16px;height:16px;margin-top:3px}
+.saved-answers{border-top:1px solid #dce8de;padding-top:25px;margin-top:28px}
+.saved-answers h3{font-size:21px;margin:0}
+.saved-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.saved-list button{display:flex;align-items:center;gap:10px;text-align:left;background:#fff;border:1px solid #dce8df;border-radius:12px;padding:14px;color:#27513e}
+.saved-list button>span{flex:1;font-size:12px;font-weight:750}
+.saved-list .icon{width:17px;height:17px;color:#4c8b67}
+.saved-list button:hover{background:#edf7ee}
+@media(max-width:980px){.task-form-grid{grid-template-columns:minmax(160px,2fr) minmax(100px,1fr) minmax(100px,1fr)}.task-add{grid-column:1/-1;justify-self:start}}
+@media(max-width:700px){.task-columns{grid-template-columns:1fr}.saved-list{grid-template-columns:1fr}.tasks-intro{flex-wrap:wrap;gap:6px}.task-form-grid{grid-template-columns:1fr 1fr}.task-field-title{grid-column:1/-1}.task-add{grid-column:1/-1}.topic-group .topics-grid{grid-template-columns:1fr}}
+@media(max-width:510px){
+  .location-banner{height:clamp(135px,35vw,180px)}
+  .hero{padding:21px 0 27px}
+  .hero h1{font-size:clamp(28px,7vw,34px);margin:10px 0 10px}
+  .hero-copy>p{font-size:12px;margin-bottom:17px;line-height:1.6}
+  .search-box{height:54px}
+  .search-hint{font-size:10px;line-height:1.55}
+  .header-inner{height:67px;gap:13px}
+  .brand{min-width:0;gap:7px}
+  .brand-mark{width:33px;height:33px;border-radius:9px}
+  .brand-mark .icon{width:19px;height:19px}
+  .brand-text strong{font-size:12px;white-space:nowrap}
+  .brand-text span{display:none}
+  .nav{gap:9px}
+  .nav-link{font-size:10px;padding:22px 0 21px}
+  .shell{width:min(1130px,calc(100% - 30px))}
+  .task-form{padding:17px}
+  .task-section-top{padding:16px}
+  .tasks-intro{padding:15px}
+  .task-add{width:100%}
+  .topic-group>summary{padding:14px}
+  .topic-group .topics-grid{padding:9px}
+}
+
+
+/* Mijn Leerhuis v1.6: homepage, Mijn taken, subtiele indeling */
+/* De zoekfunctie en gebouwfoto horen alleen bij Start. */
+.location-banner[hidden], .hero[hidden] { display:none !important; }
+body:not(.is-home-view) main > .shell { min-height:55vh; }
+
+/* Vier onderscheidbare onderdelen, met een zacht kleurverschil. */
+.home-zone {border:1px solid transparent;border-radius:20px;margin:0 0 20px;padding:28px 30px;}
+.home-zone-help {background:#edf6ed;border-color:#d7e7d9;box-shadow:none;}
+.home-zone-help .help-route-step {background:#fffdf9;border-color:#dfeae0;}
+.home-zone-shortcuts {background:#eef5f7;border-color:#d9e6eb;}
+.home-zone-shortcuts .quick-link {background:rgba(255,255,255,.93);border-color:#d7e4e8;}
+.home-zone-shortcuts .quick-link-icon {background:#e0edf1;color:#3c6b7c;}
+.home-zone-shortcuts .quick-link:hover {background:#fff;border-color:#a2c5cd;}
+.home-zone-phases {background:#fbf6ea;border-color:#eae0cb;}
+.home-zone-phases .phase-card {border-color:#e3dbc9;}
+.home-zone-topics {background:#f2f2f8;border-color:#e1e1ec;}
+.home-zone-topics .topic-group {border-color:#e2e2eb;box-shadow:none;}
+.home-zone-topics .topic-group[open]>summary {background:#e9edf3;border-color:#dcdfe9;}
+.home-zone .section-heading {margin-bottom:18px;}
+.home-zone .section-heading h2 {color:#233e38;}
+.home-zone-help .help-route-note {color:#50695b;}
+.home-zone-shortcuts .section-heading p,.home-zone-phases .section-heading p {color:#63766d;}
+.home-saved {background:#f7f9f6;border:1px solid #dce8de;border-radius:15px;overflow:hidden;margin:20px 0 0;}
+.home-saved > summary {display:flex;align-items:center;gap:9px;cursor:pointer;padding:17px 20px;font-weight:750;font-size:14px;}
+.home-saved > summary .icon {width:17px;height:17px;color:#448365;}
+.home-saved[open]>summary {border-bottom:1px solid #e0e9e1;}
+.home-saved .saved-answers {border:0;margin:0;padding:18px;}
+.home-saved .saved-answers .section-heading {margin-bottom:12px;}
+.task-feedback {margin:-9px 0 18px;padding:11px 14px;background:#eef7ed;border:1px solid #d5e7d5;border-radius:11px;color:#28583d;font-size:12px;display:flex;align-items:flex-start;gap:9px;line-height:1.6;}
+.task-feedback .icon {width:17px;height:17px;}
+@media (max-width:780px) {
+  .home-zone {padding:22px 20px;border-radius:17px;margin-bottom:14px;}
+  .home-zone .section-heading {margin-bottom:13px;}
+  body:not(.is-home-view) .content-start {padding-top:25px;}
+}
+@media (max-width:510px) {
+  .home-zone {padding:19px 15px;}
+  .home-zone-help {box-shadow:none;}
+  .home-zone .section-heading h2 {font-size:22px;}
+  .home-zone .section-heading p {font-size:12px;}
+  .home-zone .topic-group>summary {padding:13px;}
+}
+
+/* Bevestiging op de plek waar de nieuw toegevoegde taak staat. */
+.task-just-added { outline:2px solid #91b69b; outline-offset:2px; border-radius:12px; }

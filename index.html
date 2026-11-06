@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="style.css">
   <script defer src="content.js"></script>
   <script defer src="lwp-data.js"></script>
+  <script defer src="document-index.js"></script>
+  <script defer src="document-search.js"></script>
   <script defer src="app.js"></script>
 </head>
 <body>
@@ -41,11 +43,9 @@
         </a>
         <nav class="nav" aria-label="Hoofdnavigatie">
           <a href="#home" data-view="home" class="nav-link active">Start</a>
-          <a href="#startgids" data-view="startgids" class="nav-link">Startgids</a>
-          <a href="#onderwerpen" data-view="onderwerpen" class="nav-link">Onderwerpen</a>
-          <a href="#vragen" data-view="vragen" class="nav-link">Alle vragen</a>
+          <a href="#lwp" data-view="lwp" class="nav-link">Mijn LWP’s</a>
+          <a href="#taken" data-view="taken" class="nav-link">Mijn taken</a>
         </nav>
-        <button class="header-help" data-action="focus-search"><svg class="icon"><use href="#i-search"></use></svg><span>Stel je vraag</span></button>
       </div>
     </header>
 
@@ -64,10 +64,10 @@
               <label for="question-search" class="search-label">Wat wil je weten?</label>
               <div class="search-box">
                 <svg class="icon search-icon"><use href="#i-search"></use></svg>
-                <input id="question-search" type="search" placeholder="Bijvoorbeeld: hoe rond ik een LWP af?" autocomplete="off" spellcheck="false" aria-describedby="search-hint" aria-controls="search-results" aria-expanded="false">
+                <input id="question-search" type="search" placeholder="Bijvoorbeeld: hoe bereid ik mijn BPV-gesprek voor?" autocomplete="off" spellcheck="false" aria-describedby="search-hint" aria-controls="search-results" aria-expanded="false">
                 <button class="search-submit" type="button" id="search-button" aria-label="Zoek antwoorden"><svg class="icon"><use href="#i-arrow"></use></svg></button>
               </div>
-              <p id="search-hint" class="search-hint">Probeer: <button data-query="ziekmelden" class="inline-prompt">ziekmelden</button> <span>·</span> <button data-query="LWP" class="inline-prompt">LWP</button> <span>·</span> <button data-query="medisch rekenen" class="inline-prompt">medisch rekenen</button> <span>·</span> <button data-query="skillslab" class="inline-prompt">SkillsLab</button></p>
+              <p id="search-hint" class="search-hint">Stel je vraag in je eigen woorden. Je krijgt een kort antwoord en stappen om verder te komen.</p>
               <div id="search-results" class="search-results" aria-live="polite" hidden></div>
             </div>
           </div>
@@ -90,7 +90,7 @@
     <footer class="site-footer">
       <div class="shell footer-inner">
         <div><strong>Mijn Leerhuis</strong><p>Een wegwijzer voor je hele opleiding, naast Connect, Teams, e-TO en Eduarte. Officiële systemen blijven leidend.</p></div>
-        <div class="footer-meta"><span>Versie 1.0 · schooljaar 2026–2027</span><span>Bronnen 2019–2027 (controle nodig)</span><span>Officiële schoolinformatie en je coach blijven leidend</span></div>
+        <div class="footer-meta"><span>Versie 1.7 · overzichtelijke taken, rustige kleurvakken en vakinformatie · schooljaar 2026–2027</span><span>Bronnen 2019–2027 (controle nodig)</span><span>Officiële schoolinformatie en je coach blijven leidend</span></div>
       </div>
     </footer>
   </div>

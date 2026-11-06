@@ -13,7 +13,7 @@ window.LEERHUIS_LWPS = {
       ['Burgerschap: van start tot examen (lint)','17061','ja',null,'Verslag bij de start en aan het eind van de opleiding'],
       ['LOB: mijn ik, mijn rol, mijn loopbaan','18204','ja',null,'Loopbaanoriëntatie'],
       ['Opleidingsbeeld: leren leren bij Landstede','16338','ja',null,'Zelfstandig; bij voorkeur vroeg oppakken'],
-      ['Beroepsbeeld','16295','locatie',null,'Boerhaavehof: niet verplicht. Villa Verde: in de gids als verplicht aangeduid. Controleer dit met je coach.']
+      ['Beroepsbeeld','16295','nee',null,'Optioneel, voor beide leerhuizen. Controleer de persoonlijke studieafspraken in e-TO.']
     ],
     gevorderd: [
       ['VTH 1 t/m 3','16062 / 16095 / 16100','ja',3,'Praktijklessen en e-learnings'],
