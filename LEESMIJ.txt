@@ -1,0 +1,16 @@
+MIJN LEERHUIS — NAVIGATIEHERSTEL 1.7.1
+
+Oorzaak die dit pakket voorkomt: index.html en app.js van verschillende versies worden na een update gecombineerd.
+
+Upload alleen de meegeleverde index.html naar de HOOFDMAP van jouw bestaande repository mijnleerhuis/mijn-leerhuis.
+Deze ene index.html bevat alle CSS en JavaScript en gebruikt dezelfde afbeeldingen en Word-bestanden die al op GitHub staan.
+
+1. Ga naar https://github.com/mijnleerhuis/mijn-leerhuis
+2. Add file > Upload files.
+3. Sleep alleen index.html (niet het zip-bestand) naar de uploadpagina.
+4. Commit changes; kies de main branch.
+5. Open https://mijnleerhuis.github.io/mijn-leerhuis/#taken in een PRIVÉVENSTER of met Ctrl+F5.
+6. Controleer dat alleen Mijn taken actief is en dat Leerhuis/School zichtbaar zijn.
+
+Let op: bestaande taken en LWP-voortgang blijven gekoppeld aan het oorspronkelijke webadres en de browser; wis de browsergegevens niet.
+Alle andere bestanden in de repository mogen blijven staan.
